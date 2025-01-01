@@ -14,7 +14,7 @@ include("conexao.php");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container mt-4">
+    <div class="container mt-4 w-70">
         <?php include('mensagem.php')?>
         <div class="row">
             <div class="col=md-12">
@@ -24,8 +24,8 @@ include("conexao.php");
                             <a href="create-task.php" class="btn btn-primary float-end">Adicionar usuário</a>
                         </h4>
                     </div>
-                    <div class="card-body">
-                        <table class="table table-bordered table-striped">
+                    <div class="card-body d-flex justify-content-center">
+                        <table class="table table-bordered table-striped  w-50">
                             <tr>
                                 <th>Tarefa</th>
                                 <th>Horário</th>
@@ -48,7 +48,7 @@ include("conexao.php");
                                 </td>
                             </tr>
                             <?php 
-                                    }
+                                        }
                                     } else{
                                         echo "<h5> Nenhuma tarefa encontrada!";
                                     }
